@@ -107,9 +107,13 @@ def save_queue():
     if os.path.exists(pl_title):
         q_file = open(pl_title + "/queue.txt", "w")
         assert isinstance(queue_set, set)
-        for l in queue_set:
-            q_file.write(str(l)+"\n")
-        q_file.close()
+        if len(queue_set) == 0:
+            if os.path.exists(pl_title + "/queue.txt"):
+                os.remove(pl_title + "/queue.txt")
+        else:
+            for l in queue_set:
+                q_file.write(str(l)+"\n")
+            q_file.close()
 
 
 if __name__ == '__main__':
