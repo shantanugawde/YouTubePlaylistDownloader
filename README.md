@@ -1,7 +1,7 @@
 # YouTube Playlist Downloader
 ytpldownloader.py is a simple Python3 script which downloads all the videos in a playlist in mp4 format.
 ## Guide
-Use pip to install the dependencies.
+Use pip to install dependencies.
 ```
 pip -r install requirements.txt
 ```
