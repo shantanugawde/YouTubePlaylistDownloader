@@ -15,7 +15,7 @@ resolution = ""
 
 
 @click.command()
-@click.option('--plurl', default='', help='Complete URL of the playlist to be downloaded')
+@click.option('--plurl', help='Complete URL of the playlist to be downloaded')
 @click.option('--res', default='360p', help='Specify required resolution, such as 480p')
 def download_videos(plurl, res):
     if re.search("^http[s|]://www.youtube.com/playlist.*",plurl) is None:
