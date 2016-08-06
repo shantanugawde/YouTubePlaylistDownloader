@@ -1,13 +1,18 @@
-# hermione
-hermione.py is a simple Python3 script which downloads all the videos in a playlist in mp4 format. It is named after Hermione Granger who was a pathological note taker and is meant especially for those who want to download entire playlist(s) of tutorials.
+# YouTube Playlist Downloader
+ytpldownloader.py is a simple Python3 script which downloads all the videos in a playlist in mp4 format.
 ## Guide
 Use pip to install the dependencies.
 ```
 pip -r install requirements.txt
 ```
-Specify playlist URL and resolution(optional) to download playlist. Playlist will be downloaded in a folder in the current working directory. 
+Specify playlist URL, directory path to download the playlist to, and resolution to download playlist.
+Default resolution is 480p and default directory is the current working directory.
+URL should be of the form https://www.youtube.com/playlist?=<param_value>
 ```
-python hermione.py --plurl=<playlist_url> --res=<resolution>
+python ytpldownlader.py --plurl=<playlist_url> --res=<resolution>
 ```
+Downloads can be stopped by hitting *CTRL-C* or an equivalent combination.
+To resume the download, specify the path where the playlist directory exists. 
 ## Warning
+Do not tamper with the queue.txt file.
 You will be violating YouTube's Terms and Conditions by using this script.
