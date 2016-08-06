@@ -6,13 +6,19 @@ Use pip to install the dependencies.
 pip -r install requirements.txt
 ```
 Specify playlist URL, directory path to download the playlist to, and resolution to download playlist.
+
 Default resolution is 480p and default directory is the current working directory.
+
 URL should be of the form https://www.youtube.com/playlist?=<param_value>
 ```
 python ytpldownlader.py --plurl=<playlist_url> --res=<resolution>
 ```
+
 Downloads can be stopped by hitting *CTRL-C* or an equivalent combination.
+
 To resume the download, specify the path where the playlist directory exists. 
 ## Warning
+
 Do not tamper with the queue.txt file.
+
 You will be violating YouTube's Terms and Conditions by using this script.
