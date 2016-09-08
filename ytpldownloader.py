@@ -23,12 +23,16 @@ def download_videos(plurl, res, dirp):
     if re.search("^http[s|]://www.youtube.com/playlist.*",plurl) is None:
         print("Invalid YouTube Playlist URL")
         exit()
-    elif os.path.exists(dirp) is False:
+    elif os.path.exists(dirp) is False and dirp != "":
         print("Invalid path")
         exit()
     else:
         global queue_set, resolution, dpath
-        dpath = dirp
+        if dirp != '':
+            dpath = dirp
+        else:
+            dpath = os.path.dirname(os.path.abspath(__file__))
+
         resolution = res.strip()
         vid_set = get_links(plurl)
         queue_set = get_queue()
