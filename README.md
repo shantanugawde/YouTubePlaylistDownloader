@@ -9,7 +9,7 @@ Specify playlist URL, directory path to download the playlist to, and resolution
 
 Default resolution is 480p and default directory is the current working directory.
 
-URL should be of the form https://www.youtube.com/playlist?=<param_value>
+URL should be of the form https://www.youtube.com/playlist?=<param_value> or https://www.youtube.com/playlist?list=<param_value>
 ```
 python ytpldownloader.py --plurl=<playlist_url> --res=<resolution>
 ```
