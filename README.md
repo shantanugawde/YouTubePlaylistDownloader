@@ -11,7 +11,7 @@ Default resolution is 480p and default directory is the current working director
 
 URL should be of the form https://www.youtube.com/playlist?=<param_value>
 ```
-python ytpldownlader.py --plurl=<playlist_url> --res=<resolution>
+python ytpldownloader.py --plurl=<playlist_url> --res=<resolution>
 ```
 
 Downloads can be stopped by hitting *CTRL-C* or an equivalent combination.
